@@ -1,0 +1,27 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-tailwindcss"],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "use",
+          "tailwind",
+          "theme",
+          "apply",
+          "variants",
+          "screen",
+          "custom-variant"
+        ]
+      }
+    ],
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": ["oklch"]
+      }
+    ],
+    "hue-degree-notation": "number",
+    "lightness-notation": "number"
+  }
+}
